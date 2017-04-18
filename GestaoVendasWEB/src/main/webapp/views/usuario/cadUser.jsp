@@ -29,12 +29,17 @@
 					<div class="row">
 						<div class="col-xs-8">
 							<label for="email" class="control-label">Email</label> <input
-								type="email" class="form-control"  name="email1"
+								type="email" class="form-control"  name="email"
 								placeholder="Digite seu Email" />
 						</div>
 					</div>
 				</div>
-
+          
+                <div class="form-group">
+                <input type="radio" name="status" value="true"/>Habilitado
+                 <input type="radio" name="status" value="false"/>Desabilitado
+                </div>
+                
 				<div>
 				<button class="btn btn-success" type="submit" value="cadastrar">Cadastrar</button>
 				</div>

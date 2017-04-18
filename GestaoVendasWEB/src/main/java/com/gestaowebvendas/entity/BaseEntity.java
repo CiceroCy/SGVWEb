@@ -25,16 +25,16 @@ public class BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id", unique = true, nullable = false)
+	@Column(name = "id", unique = true, nullable = true)
 	private Long id;
 
 	@JsonInclude(Include.NON_NULL)
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	@Column(name = "criado_em", columnDefinition = "DATE", nullable = false, updatable = false)
+	@Column(name = "criado_em", columnDefinition = "DATE", nullable = true, updatable = false)
 	private Date criadoEm;
 
 	@JsonInclude(Include.NON_NULL)
-	@Column(name = "criado_por", nullable = false, updatable = false, length = 45)
+	@Column(name = "criado_por", nullable = true, updatable = false, length = 45)
 	private String criadoPor;
 
 	@JsonInclude(Include.NON_NULL)

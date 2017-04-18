@@ -47,9 +47,7 @@ public class Usuario extends BaseEntity implements Serializable {
     @JoinColumn(name = "perfil_id")
     private Perfil perfil;
 
-    @NotNull(message = "{br.com.makersweb.text.campo.enabled.obrigatorio}")
-    @Column(nullable = false)
-    private Boolean enabled;
+
 
     /**
      * @return the nome
@@ -126,19 +124,5 @@ public class Usuario extends BaseEntity implements Serializable {
 	this.perfil = perfil;
     }
 
-    /**
-     * @return the enabled
-     */
-    public Boolean getEnabled() {
-	return enabled;
-    }
-
-    /**
-     * @param enabled
-     *            the enabled to set
-     */
-    public void setEnabled(Boolean enabled) {
-	this.enabled = enabled;
-    }
 
 }
